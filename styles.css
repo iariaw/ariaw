@@ -1,0 +1,224 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    color: #111827;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Navigation */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 640px) {
+    header {
+        flex-direction: row;
+        margin-top: 4rem;
+    }
+}
+
+.brand {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    .brand {
+        margin-bottom: 0;
+        text-align: left;
+    }
+}
+
+.brand h1 {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.brand p {
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (min-width: 640px) {
+    nav {
+        gap: 1.5rem;
+    }
+}
+
+nav a {
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #4b5563;
+}
+
+nav a:hover {
+    color: #111827;
+}
+
+nav a.active {
+    color: #111827;
+    font-weight: 600;
+}
+
+/* Main content */
+main {
+    padding: 2rem 1.5rem 2.5rem;
+}
+
+@media (min-width: 640px) {
+    main {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+main p {
+    margin-bottom: 1rem;
+}
+
+main strong {
+    font-weight: 600;
+}
+
+main a {
+    color: #111827;
+    text-decoration: underline;
+}
+
+main a:hover {
+    color: #1f2937;
+}
+
+/* Projects page */
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 640px) {
+    .projects-list {
+        gap: 1.5rem;
+    }
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+    transition: border-color 0.2s;
+}
+
+.project-item:hover {
+    border-color: #111827;
+}
+
+@media (min-width: 640px) {
+    .project-item {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.project-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.375rem;
+}
+
+@media (min-width: 640px) {
+    .project-icon {
+        margin-bottom: 0;
+        margin-right: 1rem;
+    }
+}
+
+.project-content h3 {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.project-content p {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-bottom: 0;
+}
+
+.project-content a {
+    color: #4b5563;
+    text-decoration: underline;
+}
+
+.project-content a:hover {
+    color: #374151;
+}
+
+/* Resume page */
+.section-title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.resume-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #374151;
+    margin-bottom: 1.5rem;
+}
+
+.resume-list li {
+    margin-bottom: 0.25rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    color: #374151;
+    font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.skill-category h4 {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.skill-category ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
